@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+*{
+  
+    font-family: 'Inter Tight', sans-serif;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: lightblue;
+}
+
+.ttform{
+    margin: 20px 0 0 0 ;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    margin: 15px 0;
+    font-size: 15px;
+    width: 95%;
+    padding: 15px 10px;
+    border: 1.5px solid blue;
+    border-radius: 5px;
+}
+.todo{
+    margin: auto;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+table{
+    width: 40%;
+    border-collapse: collapse ;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+    
+}
+
+table thead td,
+table thead th,{
+    background-color: blue;
+    color: white;
+}
+
+table td{
+    padding: 5px 10px;
+    border: 1px solid blue;
+    color: white;
+}
+
+
+form button{
+    padding: 20px 0;
+    font-size: 18px;
+    background-color: mediumturquoise;
+    width: 50%;
+}
+
+.tt{
+    text-align: center;
+    margin-top: 35px;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+*{
+   
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.ttcont{
+    margin: 40px 0 0 0 ;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+div{
+
+   
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.btnClick{
+    margin: 35px;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    background-color: lightblue;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px;
+}
+
+.btnRnc{
+    margin: 35px;
+    font-size: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    background-color: lightblue;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px;
+}
+
+.Cont{
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 2px solid black;
+    box-shadow: 5px 5px 2px; 
+    
+}
