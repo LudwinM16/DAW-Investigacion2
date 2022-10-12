@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Investigación</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/indexeddb.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="logo">
+			<a href="practicas.html">Proyecto de Investigación2</a>
+		</div>
+		<nav class="enlaces">
+			<a href="#">sessionStorage</a>
+			<a href="#">localStorage</a>
+			<a href="#">indexedDB</a>
+			<a href="#">Ejemplos</a>
+		</nav>
+
+	</div>
+	<header class="contenedor primero">
+		 <h2 class="tt">Ejemplo de IndexedDB</h2>
+	</header>
+	<section class="contenedor info">
+        
+        <div class="todo">
+        <form>
+            <h4 class="ttform">CRUD de Lenguajes</h4>
+            <input type="text" placeholder="Nombre del lenguaje" required >
+            <input type="number" placeholder="Version del lenguaje" required pattern="(^[0-9]{1,3}$|^[0-9]{1,3}\.[0-9]{1,3}$)">
+            <input type="text" placeholder="Creador del lenguaje" required pattern="^[a-zA-Z\s]{2,254}">
+    
+            <button type="button" id="btnN">Nuevo lenguaje</button>
+                <button style="display: none;"  type="button" id="btnA">Actulizar lenguajes</button>
+        </form>
+    
+       
+        <table>
+            <thead>
+                <tr>
+                    <td>Lenguaje de Programacion</td>
+                    <td>Versión</td>
+                    <td>Creador</td>
+                    <td>Actualizar</td>
+                    <td>Eliminar</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+	</section>
+	
+
+</body>
+</html>
