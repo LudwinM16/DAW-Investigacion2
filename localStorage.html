@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>LocalStorage</title>
+	<link rel="stylesheet" type="text/css" href="css/styleFlecha.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="logo">
+			<a href="indexedDB.html">Proyecto de Investigación2</a>
+		</div>
+		<nav class="enlaces">
+			<a href="sessionStorage.html">sessionStorage</a>
+			<a href="#">localStorage</a>
+			<a href="indexedDB.html">indexedDB</a>
+			<a href="ejeLocal.html">Ejemplo LocalStorage</a>
+			<a href="ejeSession.html">Ejemplo sessionStorage</a>
+			<a href="ejeIndexedb.html">Ejemplo indexedDB</a>	
+		</nav>
+
+	</div>
+	<header class="contenedor primero">
+		 <h2 class="tt">LocalStorage, ¿Que es?</h2>
+	</header>
+
+	<section class="contenedor info">
+		<!--<h2 class="titulo">Buenas prácticas de edición de código en JS</h2>-->
+		<p class="p">Este es llamado tambien <b>Almacenamiento local</b>, es un tipo de almacenamiento bien conocido por programadores de JS, debido a su rapidez y eficacia. Está basado en el formato <b>Clave-Valor</b>, y que también este no caduca a excepción de que limpiemos el navegador.</p>
+
+		<div class="box-contenedor">
+			<div class="box">
+				<h3>Como implementar LocalStorage en nuestro sitio web:</h3>
+				<img src="css/img/local.png" alt="Como implementar LocalStorage en nuestro sitio web" class="imagen-local">
+			</div>
+		</div>
+
+	</section>
+
+	<section class="contenedor segundo">
+		<h2 class="titulo">Ventajas y desventajas</h2>
+			<p class="p">Estas son algunas ventajas y desventajas con las que LocalStorage cuenta:</p>
+		
+		<div class="box-contenedor opc">
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">-> Acceder a la información de manera rapida y eficaz.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">-> Los datos se mantienen guardados incluso después de cerrar las ventanas.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">-> Tiene la capacidad de compartir los valores almacenados entre las ventanas.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">-> Cuando se acumulan muchos datos, deja de ser eficiente.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">-> Solo es posible almacenar cadenas de texto (no booleanos, arrays, objetos, etc).</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">-> Cualquier script en la página puede tener acceso a la información.</h3>
+			</div>
+		</div>
+
+	</section >
+
+	<section class="contenedor cambio">
+	
+		
+	</section>
+
+	<section class="contenedor tercero">
+		<article class="contain">
+			<h2 class="titulo">Métodos y propiedades de LocalStorage</h2>
+			<h3 class="titulo ok">Al ser similar a sessionStorage, LocalStorage hereda las mismas propiedades y métodos del objeto Storage:</h3>
+			<p class="pa">Propiedades</p>
+			<br><br>
+			<div class="box-contenedor opc">
+				<div class="box lok">
+					<h3><b>length</b></h3>
+					<h3 class="h3-2">-> Determina la cantidad de elementos almacenados en el objeto, devolviendo dicha cantidad como un número entero.</h3>
+				</div>
+			</div>
+			<p class="pa">Métodos</p>
+			<br><br>
+			<div class="box-contenedor opc">
+				<div class="box lok">
+					<h3><b>key()</b></h3>
+					<h3 class="h3-2">-> Este método requiere de un número entero “n” para acceder al enésimo elemento almacenado</h3>
+					<h3><b>getItem()</b></h3>
+					<h3 class="h3-2">-> Se debe ingresar el nombre de una clave (elemento o propiedad) para que este método devuelva el valor de dicho elemento almacenado en el Objeto</h3>
+					<h3><b>setItem()</b></h3>
+					<h3 class="h3-2">-> 
+						Este método necesita un nombre y un valor para añadir en el Objeto una propiedad con ese nombre como su nombre o clave y cuyo valor será el ingresado, si ya existía dicha propiedad sólo actualiza su valor. Para ingresar los campos necesarios, se deben separar por comas ( , )
+						sessionStorage(clave, valor); 
+						</h3>
+					<h3><b>removeItem()</b></h3>
+					<h3 class="h3-2">-> 
+						Requiere que se ingrese el nombre de una propiedad para que este método la elimine del objeto
+					</h3>
+					<h3><b>clear()</b></h3>
+					<h3 class="h3-2">-> Al llamar este método, se vacían el objeto Storage, eliminando todas las propiedades almacenadas y su valor o información contenida.</h3>
+				</div>
+			</div>
+		</article>	
+		<br><br>			
+		<!--<section class="contenedor cambio2">
+			<h2 class="tituloBli">Bibliografía</h2>
+		</section>
+			
+        <footer>
+            <p class="foot">
+                MDN Web Docs (2022). <b>Funciones Flecha</b>. MDN Web Docs. Extraído de: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+            </p>
+            <p class="foot">
+                Kantor I. (2022). <b>Funciones Flecha, lo básico</b>. JAVASCRIPT.INFO. Extraído de : <a href="https://es.javascript.info/arrow-functions-basics" target="_blank">https://es.javascript.info/arrow-functions-basics</a>
+            </p>
+        </footer>-->
+		
+	</section>
+</body>
+</html>
