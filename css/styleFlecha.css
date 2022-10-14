@@ -184,13 +184,14 @@ p{
 }
 
 
+
 .cambio{
-	background: url(img/img2.jpg) no-repeat center;
+	background: url(img/cambio.jpg) no-repeat center;
 	background-attachment: fixed;
 	height: auto;
 	width: auto;
+	padding: 5% 0;
 }
-
 .tercero{
 	height: 100%;
 	align-items: center;
