@@ -10,7 +10,7 @@
 			<a href="indexedDB.html">Proyecto de Investigación2</a>
 		</div>
 		<nav class="enlaces">
-			<a href="#">sessionStorage</a>
+			<a href="sessionStorage.html">sessionStorage</a>
 			<a href="localStorage.html">localStorage</a>
 			<a href="indexedDB.html">indexedDB</a>
 			<a href="ejeLocal.html">Ejemplo LocalStorage</a>
@@ -25,7 +25,39 @@
 
 	<section class="contenedor info">
 		<!--<h2 class="titulo">Buenas prácticas de edición de código en JS</h2>-->
-		<p class="p">Es una propiedad del objeto <b>Window</b> que nos permite acceder al objeto <b>Storage</b>. La información almacenada  se mantiene activa mientras la página que este utilizandola este activa, perdurando inclusive si se recarga dicha página o se vuelve a abrir en la misma ventana. Sin embargo, al abrir la página en una nueva ventana del navegador, se iniciará una nueva sesión sin la información almacenada</p>
+		<p class="p">
+			Es una propiedad del objeto <b>Window</b> que nos permite acceder al objeto 
+			<b>Storage</b> (<i>“Almacenamiento de sesión”</i> sería el nombre en español de esta propiedad), 
+			siendo similar a un Objeto, el cual guarda información a través del formato "<b>clave-valor</b>",
+			 esta información tiene vigencia en una página mientras esté abierta en una ventana del
+			  navegador, perdurando aún si se recarga y/o se vuelve abrir dicha página en la misma ventana. 	
+		</p>
+		<p class="p">
+			Sin embargo, al abrir la página en una nueva ventana del navegador, 
+			se iniciará una nueva sesión sin la información almacenada. Cabe mencionar que sessionStorage
+			 también se puede denominar como un objeto de almacenamiento web dado a que acceden a un objeto Storage.
+		</p>
+		<p class="p">
+			La capacidad de almacenamiento de este objeto oscila entre los 5 y 10 MB, según el navegador. 
+		</p>
+		<p class="p">
+			Si se desea acceder a los datos almacenados, se debe hacer mediante scripts del mismo origen.
+		</p>
+		<p class="p">
+			Cabe mencionar que mayoritariamente la información almacenada, se guarda como tipo texto y 
+			su uso es limitado dentro de la misma página.
+		</p>
+		<p class="p">
+			<b>- Objeto Storage:</b> Es un objeto que permite almacenar información para un documento
+				web específico, almacenando dicha información en una sesión (<i>sessionStorage</i>) o 
+				de manera local (localStorage), permitiendo añadir, modificar o eliminar los datos almacenados. 
+		</p>
+		<p class="p">
+			<b>- Formato “clave-valor”: </b> siendo sessionStorage similar a un objeto, contiene pares de clave-valor
+			 (<i>propiedades</i>). Es decir, que un objeto puede contener propiedades y cada una de estas tiene un
+			  nombre único también llamado clave, que tiene un valor respectivo.
+ 
+		</p>
 
 		<div class="box-contenedor">
 			<div class="box">
@@ -33,39 +65,10 @@
 				<img src="css/img/session.png" alt="Como implementar LocalStorage en nuestro sitio web" class="imagen-local">
 			</div>
 		</div>
-
 	</section>
-
-	<section class="contenedor segundo">
-		<h2 class="titulo">Ventajas y desventajas</h2>
-			<p class="p">Estas son algunas ventajas y desventajas que sessionStorage tiene:</p>
-		
-		<div class="box-contenedor opc">
-			<div class="box lok">
-				<h3><b>Ventaja</b></h3>
-				<h3 class="h3-2">-> Acceder a la información de manera rapida y eficaz por su formato "clave-valor"</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Ventaja</b></h3>
-				<h3 class="h3-2">-> Cuenta con capacidad de almacenar desde 5 hasta 10MB</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Desventaja</b></h3>
-				<h3 class="h3-2">-> Al cerrar la ventana en el navegador, la información se pierde.</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Desventaja</b></h3>
-				<h3 class="h3-2">-> Los datos obtenidos no se puede compartir entre mas de una ventana.</h3>
-			</div>
-		</div>
-
-	</section >
-
 	<section class="contenedor cambio">
-	
-		
+		<p>  </p>
 	</section>
-
 	<section class="contenedor tercero">
 		<article class="contain">
 			<h2 class="titulo">Métodos y propiedades de sessionStorage</h2>
@@ -100,19 +103,63 @@
 				</div>
 			</div>
 		</article>	
-		<br><br>			
-		<!--<section class="contenedor cambio2">
+		<br><br>	
+	</section>
+		
+	<section class="contenedor cambio">
+		<p>  </p>
+	</section>
+	<section class="contenedor segundo">
+		
+		<h2 class="titulo">Ventajas y desventajas</h2>
+			<p class="p">Estas son algunas ventajas y desventajas que sessionStorage tiene:</p>
+		
+		<div class="box-contenedor opc">
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">-> Acceder a la información de manera rapida y eficaz por su formato "clave-valor"</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">-> Cuenta con capacidad de almacenar desde 5 hasta 10MB</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">-> Al cerrar la ventana en el navegador, la información se pierde.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">-> Los datos obtenidos no se puede compartir entre mas de una ventana.</h3>
+			</div>
+		</div>
+
+	</section >
+
+	<section class="contenedor tercero">
+		<section class="contenedor cambio2">
 			<h2 class="tituloBli">Bibliografía</h2>
 		</section>
 			
         <footer>
             <p class="foot">
-                MDN Web Docs (2022). <b>Funciones Flecha</b>. MDN Web Docs. Extraído de: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+                MDN Web Docs (2022). <b>Window.sessionStorage</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage" target="_blank">https://developer.mozilla.org/es/docs/Web/API/Window/sessionStorage</a>
             </p>
             <p class="foot">
-                Kantor I. (2022). <b>Funciones Flecha, lo básico</b>. JAVASCRIPT.INFO. Extraído de : <a href="https://es.javascript.info/arrow-functions-basics" target="_blank">https://es.javascript.info/arrow-functions-basics</a>
+		Boneu M. (2021). <b>Tutorial de claves de objetos en JavaScript – Cómo usar un par clave-valor en JS</b>. Extraído del sitio freeCodeCamp: <a href="https://www.freecodecamp.org/espanol/news/tutorial-de-claves-de-objectos-en-javascript-como-usar-un-par-clave-valor-en-js/" target="_blank">https://www.freecodecamp.org/espanol/news/tutorial-de-claves-de-objectos-en-javascript-como-usar-un-par-clave-valor-en-js/</a>
             </p>
-        </footer>-->
+	    <p class="foot">
+                MDN Web Docs (2022). <b>Storage/Almacenamiento</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/es/docs/Web/API/Storage" target="_blank">https://developer.mozilla.org/es/docs/Web/API/Storage</a>
+            </p>
+	    <p class="foot">
+		Kantor I. (2022). <b>LocalStorage, sessionStorage</b>. Extraído del sitio javascript.info: <a href="https://es.javascript.info/localstorage" target="_blank">https://es.javascript.info/localstorage</a>
+            </p>
+	    <p class="foot">
+		aprenderaprogramar.com (2022). <b>sessionStorage y localStorage JavaScript. Diferencias. Guardar datos en caché y persistencia (CU01198E)</b>. . Extraído de aprendeaprogramar.com: <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=888:sessionstorage-y-localstorage-javascript-diferencias-guardar-datos-en-cache-y-persistencia-cu01198e&catid=78&Itemid=206" target="_blank">https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=888:sessionstorage-y-localstorage-javascript-diferencias-guardar-datos-en-cache-y-persistencia-cu01198e&catid=78&Itemid=206</a> 
+            </p>
+	    <p class="foot">
+		Binary Coffee (2020). <b>¿CUÁL ES LA DIFERENCIA ENTRE LOCALSTORAGE, SESSIONSTORAGE E INDEXEDDB?</b> Extraído del sitio Binary Coffe: <a href="https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb" target="_blank">https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb</a>
+            </p>
+        </footer>
 		
 	</section>
 </body>
