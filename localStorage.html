@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>LocalStorage</title>
+	<title>localStorage</title>
 	<link rel="stylesheet" type="text/css" href="css/styleFlecha.css">
 </head>
 <body>
@@ -20,64 +20,35 @@
 
 	</div>
 	<header class="contenedor primero">
-		 <h2 class="tt">LocalStorage, ¿Que es?</h2>
+		 <h2 class="tt">localStorage</h2>
 	</header>
 
 	<section class="contenedor info">
-		<!--<h2 class="titulo">Buenas prácticas de edición de código en JS</h2>-->
-		<p class="p">Este es llamado tambien <b>Almacenamiento local</b>, es un tipo de almacenamiento bien conocido por programadores de JS, debido a su rapidez y eficacia. Está basado en el formato <b>Clave-Valor</b>, y que también este no caduca a excepción de que limpiemos el navegador.</p>
+		<p class="p">
+			Es una propiedad del objeto <b>Window</b> que accede a un objeto <b>Storage</b>
+			(en español sería “Almacenamiento local”), siendo muy similar a sessionStorage
+			pues almacena información con el mismo formato: “clave-valor”, pero con la
+			diferencia de que dicha información no expira pues no depende de la duración
+			de una sesión sino que se almacena de manera local. 
+		</p>
+		<p class="p">
+			Cabe resaltar que al igual que la otra propiedad, localStorage se denomina también como un <b><i> objeto de almacenamiento web</i></b>.
+		</p>
 
-		<div class="box-contenedor">
-			<div class="box">
-				<h3>Como implementar LocalStorage en nuestro sitio web :</h3>
-				<img src="css/img/local.png" alt="Como implementar LocalStorage en nuestro sitio web" class="imagen-local">
-			</div>
-		</div>
-
+		<p class="p">
+			- <b>localStorage</b> tiene una capacidad de almacenamiento de al menos <b>10 MB</b>, dependiendo del navegador.
+		</p>
 	</section>
 
-	<section class="contenedor segundo">
-		<h2 class="titulo">Ventajas y desventajas</h2>
-			<p class="p">Estas son algunas ventajas y desventajas con las que LocalStorage cuenta:</p>
-		
-		<div class="box-contenedor opc">
-			<div class="box lok">
-				<h3><b>Ventaja</b></h3>
-				<h3 class="h3-2">-> Acceder a la información de manera rapida y eficaz.</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Ventaja</b></h3>
-				<h3 class="h3-2">-> Los datos se mantienen guardados incluso después de cerrar las ventanas.</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Ventaja</b></h3>
-				<h3 class="h3-2">-> Tiene la capacidad de compartir los valores almacenados entre las ventanas.</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Desventaja</b></h3>
-				<h3 class="h3-2">-> Cuando se acumulan muchos datos, deja de ser eficiente.</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Desventaja</b></h3>
-				<h3 class="h3-2">-> Solo es posible almacenar cadenas de texto (no booleanos, arrays, objetos, etc).</h3>
-			</div>
-			<div class="box lok">
-				<h3><b>Desventaja</b></h3>
-				<h3 class="h3-2">-> Cualquier script en la página puede tener acceso a la información.</h3>
-			</div>
-		</div>
-
-	</section >
-
 	<section class="contenedor cambio">
-	
-		
+		<p>  </p>
 	</section>
 
 	<section class="contenedor tercero">
 		<article class="contain">
-			<h2 class="titulo">Métodos y propiedades de LocalStorage</h2>
-			<h3 class="titulo ok">Al ser similar a sessionStorage, LocalStorage hereda las mismas propiedades y métodos del objeto Storage:</h3>
+			<h2 class="titulo">Métodos y propiedades de sessionStorage</h2>
+			
+			<h3 class="titulo ok">Al ser similar a <i>sessionStorage</i>, <i>localStorage</i> hereda las mismas propiedades y métodos del objeto <i>Storage</i>:</h3>
 			<p class="pa">Propiedades</p>
 			<br><br>
 			<div class="box-contenedor opc">
@@ -86,11 +57,12 @@
 					<h3 class="h3-2">-> Determina la cantidad de elementos almacenados en el objeto, devolviendo dicha cantidad como un número entero.</h3>
 				</div>
 			</div>
+			<br><br>
 			<p class="pa">Métodos</p>
 			<br><br>
 			<div class="box-contenedor opc">
 				<div class="box lok">
-					<h3><b>key()</b></h3>
+					<h3 class="h3-2"><b>key()</b></h3>
 					<h3 class="h3-2">-> Este método requiere de un número entero “n” para acceder al enésimo elemento almacenado</h3>
 					<h3><b>getItem()</b></h3>
 					<h3 class="h3-2">-> Se debe ingresar el nombre de una clave (elemento o propiedad) para que este método devuelva el valor de dicho elemento almacenado en el Objeto</h3>
@@ -108,20 +80,96 @@
 				</div>
 			</div>
 		</article>	
-		<br><br>			
-		<!--<section class="contenedor cambio2">
+		<br><br>	
+	</section>
+	<section class="contenedor cambio">
+	
+		
+	</section>
+	<section class="contenedor segundo">
+		<h2 class="titulo">Ventajas y desventajas</h2>
+			<p class="p">Estas son algunas ventajas y desventajas con las que localStorage cuenta:</p>
+		
+		<div class="box-contenedor opc">
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">Accede a la información de manera rápida con el formato "clave-valor".</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">Los datos se mantienen guardados incluso después de cerrar las ventanas.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Ventaja</b></h3>
+				<h3 class="h3-2">Permite compartir los valores almacenados entre las ventanas.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">Cuando se acumulan muchos datos, deja de ser eficiente.</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">Solo se almacenan cadenas de texto (no booleanos, arrays, objetos, etc).</h3>
+			</div>
+			<div class="box lok">
+				<h3><b>Desventaja</b></h3>
+				<h3 class="h3-2">Cualquier script en la página puede tener acceso a la información.</h3>
+			</div>
+		</div>
+
+	</section >
+
+	<section class="contenedor cambio">
+		<p>  </p>
+	</section>
+	
+
+	<section class="contenedor info">
+		<div class="box-contenedor">
+			<h2 class="titulo">¿Cómo implementarlo?</h2>
+			<div class="box">
+				<h3>Cómo implementar localStorage en nuestro sitio web:</h3>
+				<img src="css/img/local.png" alt="Como implementar LocalStorage en nuestro sitio web" class="imagen-local">
+			</div>
+		</div>
+	</section>
+
+	<section class="contenedor cambio">
+	
+		
+	</section>
+	
+	<section class="contenedor tercero">
+		<section class="contenedor cambio2">
 			<h2 class="tituloBli">Bibliografía</h2>
 		</section>
 			
         <footer>
             <p class="foot">
-                MDN Web Docs (2022). <b>Funciones Flecha</b>. MDN Web Docs. Extraído de: <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions</a>
+                MDN Web Docs (2022). <b>Window.localStorage</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/es/docs/Web/API/Window/localStorage" target="_blank">https://developer.mozilla.org/es/docs/Web/API/Window/localStorage</a>
             </p>
             <p class="foot">
-                Kantor I. (2022). <b>Funciones Flecha, lo básico</b>. JAVASCRIPT.INFO. Extraído de : <a href="https://es.javascript.info/arrow-functions-basics" target="_blank">https://es.javascript.info/arrow-functions-basics</a>
+		Boneu M. (2021). <b>Tutorial de claves de objetos en JavaScript – Cómo usar un par clave-valor en JS</b>. Extraído del sitio freeCodeCamp: <a href="https://www.freecodecamp.org/espanol/news/tutorial-de-claves-de-objectos-en-javascript-como-usar-un-par-clave-valor-en-js/" target="_blank">https://www.freecodecamp.org/espanol/news/tutorial-de-claves-de-objectos-en-javascript-como-usar-un-par-clave-valor-en-js/</a>
             </p>
-        </footer>-->
+	    <p class="foot">
+                MDN Web Docs (2022). <b>Storage/Almacenamiento</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/es/docs/Web/API/Storage" target="_blank">https://developer.mozilla.org/es/docs/Web/API/Storage</a>
+            </p>
+	    <p class="foot">
+		Kantor I. (2022). <b>LocalStorage, sessionStorage</b>. Extraído del sitio javascript.info: <a href="https://es.javascript.info/localstorage" target="_blank">https://es.javascript.info/localstorage</a>
+            </p>
+
+		<p class="foot">
+			NOVIELLO (2021). <b>Cómo utilizar localStorage y sessionStorage</b>. Extraído del sitio NOVIELLO: <a href="https://noviello.it/es/como-utilizar-localstorage-y-sessionstorage/" target="_blank">https://noviello.it/es/como-utilizar-localstorage-y-sessionstorage/</a>
+        </p>
+	    <p class="foot">
+		aprenderaprogramar.com (2022). <b>sessionStorage y localStorage JavaScript. Diferencias. Guardar datos en caché y persistencia (CU01198E)</b>. . Extraído de aprendeaprogramar.com: <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=888:sessionstorage-y-localstorage-javascript-diferencias-guardar-datos-en-cache-y-persistencia-cu01198e&catid=78&Itemid=206" target="_blank">https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=888:sessionstorage-y-localstorage-javascript-diferencias-guardar-datos-en-cache-y-persistencia-cu01198e&catid=78&Itemid=206</a> 
+            </p>
+	    <p class="foot">
+		Binary Coffee (2020). <b>¿CUÁL ES LA DIFERENCIA ENTRE LOCALSTORAGE, SESSIONSTORAGE E INDEXEDDB?</b> Extraído del sitio Binary Coffe: <a href="https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb" target="_blank">https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb</a>
+            </p>
+        </footer>
 		
 	</section>
 </body>
 </html>
+
