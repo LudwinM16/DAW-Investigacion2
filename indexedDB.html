@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Investigación</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>indexedDB</title>
+	<link rel="stylesheet" type="text/css" href="css/styleFlecha.css">
 </head>
 <body>
 	<div class="menu">
@@ -12,38 +12,133 @@
 		<nav class="enlaces">
 			<a href="sessionStorage.html">sessionStorage</a>
 			<a href="localStorage.html">localStorage</a>
-			<a href="indexedDB.html">indexedDB</a>
+			<a href="#">indexedDB</a>
 			<a href="ejeLocal.html">Ejemplo LocalStorage</a>
 			<a href="ejeSession.html">Ejemplo sessionStorage</a>
 			<a href="ejeIndexeddb.html">Ejemplo indexedDB</a>
 		</nav>
 	</div>
 	<header class="contenedor primero">
-		 <h2 class="tt">IndexedDB</h2>
+		 <h2 class="tt">indexedDB</h2>
 	</header>
 	<section class="contenedor info">
-		<p class="p">Llamado igualmente como Base de datos indexada, <br>es almacenada de una forma local en el navegador, <br> está dado por las opciones de búsqueda y filtrado que proporciona esta funcionalidad similares a una base de datos, <br> que para el manejo de un cúmulo grande de datos <br> mejoran grandemente el rendimiento de la aplicación.
-</p>
+		<p class="p">
+			Es una <b>API</b> de almacenamiento (“Base de datos indexada” en español), 
+			brindando la capacidad de guardar información como datos estructurados, 
+			similar a una base de datos local en el navegador. 
+		</p>
+		<p class="p">
+			Es importante conocer que es preferible utilizar <b>indexedDB</b> antes que <a href="localStorage.html" target="_blank">localStorage</a>, 
+			pues la primera ofrece opciones de búsqueda y filtrado (como una base de datos)
+			 siendo útiles si se almacena un gran cúmulo de información y mejoran grandemente 
+			 el rendimiento de una aplicación; en cambio, la segunda, almacena la información 
+			 en formato <b>“clave-valor”</b>, en dado caso que se quisiera almacenar un listado, 
+			 habría que realizarlo al interior del navegador y en cada consulta obtener dichos 
+			 datos en la memoria y hacer las operaciones pertinentes; mientras que con indexedDB, 
+			 todas estas operaciones serían manejadas por el navegador y solo se obtendría el 
+			 resultado de las consultas.
+		</p>
 	</section>
+
+	<section class="contenedor cambio">
+		<p>  </p>
+	</section>
+	<section class="contenedor tercero">
+		<article class="contain">
+			<h2 class="titulo">Métodos/Procesos de indexedDB</h2>
+			<p class="pa">Métodos</p>
+			<br><br>
+			<div class="box-contenedor opc">
+				<div class="box lok">
+					<h3><b>open()</b></h3>
+					<h3 class="h3-2">Brinda acceso de manera asincrónica a una base de datos, se le debe ingresar un nombre o identificador y opcionalmente, una versión.</h3>
+					<h3><b>IDBFactory</b></h3>
+					<h3 class="h3-2">Da acceso a la base de datos, siendo la interfaz global de indexedDB, además de ser su punto de acceso.</h3>
+					<h3><b>IDBCursor</b></h3>
+					<h3 class="h3-2"> 
+						Realiza iteraciones o navega a través de los objetos de almacenamiento o índices. 
+					</h3>
+					<h3><b>IDBCursorWithValue</b></h3>
+					<h3 class="h3-2"> 
+						Al igual que IDBCursor(), navega a través de los objetos almacenados pero además devuelve el valor actual del objeto en que se ha ubicado el “cursor”.
+					</h3>
+					<h3><b>IDBDatabase</b></h3>
+					<h3 class="h3-2">Es una representación de la conexión con la base de datos y siendo la única manera de hacer transacciones con ella.</h3>
+					<h3><b>IDBEnvironment</b></h3>
+					<h3 class="h3-2">Permite acceder a la base de datos para el front-end o lado del cliente, se usa como parte del objeto Window.</h3>
+					<h3><b>IDBIndex</b></h3>
+					<h3 class="h3-2">Accede a los metadatos de un índice.</h3>
+					<h3><b>IDBKeyRange</b></h3>
+					<h3 class="h3-2">Establece un rango de claves o propiedades almacenadas.</h3>
+					<h3><b>IDBObjectStore</b></h3>
+					<h3 class="h3-2">Representa un objeto para almacenar datos o información.</h3>
+					<h3><b>IDBOpenDBRequest</b></h3>
+					<h3 class="h3-2">Indica condiciones para ingresar a una base de datos.</h3>
+					<h3><b>IDBRequest</b></h3>
+					<h3 class="h3-2">Obtiene los resultados de una condición a la base de datos y a sus objetos.</h3>
+					<h3><b>IDBTransaction</b></h3>
+					<h3 class="h3-2">Indica una transacción o consulta a la base de datos, se debe indicar a qué objeto se va a acceder y el tipo de acceso deseado (de lectura o escritura).</h3>
+					<h3><b>IDBVersionChangeEvent</b></h3>
+					<h3 class="h3-2">Permite saber sí la versión de la base de datos actual ha cambiado.</h3>
+				</div>
+			</div>
+		</article>	
+		<br><br>	
+	</section>
+
+	<section class="contenedor cambio">
+		<p>  </p>
+	</section>
+
 	<section class="contenedor segundo">
 		<h2 class="titulo">Ventajas Y Desventajas</h2>
 		<div class="box-contenedor opc">
 			<div class="box lok">
-				<h3> <b>Ventaja</b> <br> Aprueba trabajar con gran acumulación de datos de una manera fácil y eficiente.  </h3>
+				<h3> <b>Ventaja</b> <br>Permite trabajar con una gran cantidad de datos de manera fácil y eficiente.</h3>
 			</div>
 			<div class="box lok">
-				<h3> <b>Ventaja</b> <br> Tiene buenas opciones de búsqueda y filtrado </h3>
+				<h3> <b>Ventaja</b> <br>Se puede trabajar de forma organizada haciendo uso de Promises.</h3>
 			</div>
 			<div class="box lok">
-				<h3> <b>Ventaja</b> <br>Se puede trabajar de forma organizada haciendo uso de Promises. </h3>
-			</div>	
-			<div class="box lok">
-				<h3> <b>Desventaja</b> <br>Su nivel  de complejidad es mayor respecto a utilizar localstorage y el sessionstorage. </h3>
+				<h3> <b>Desventaja</b> <br>Su nivel  de complejidad es mayor respecto a utilizar y configurarlo en comparación a <i>localStorage</i> y <i>sessionStorage</i>.</h3>
 			</div>			
 			<div class="box lok">
-				<h3> <b>Desventaja</b> <br>Una petición fallida automáticamente aborta la transacción, cancelando todos sus cambios. </h3>
+				<h3> <b>Desventaja</b> <br>Una petición fallida automáticamente aborta la transacción, cancelando todos sus cambios.</h3>
 			</div>	
 		</div>
 	</section >
+
+	<section class="contenedor cambio">
+		<p>  </p>
+	</section>
+	
+
+	<section class="contenedor info">
+		<div class="box-contenedor">
+			<h2 class="titulo">¿Cómo implementarlo?</h2>
+			<div class="box">
+				<h3>Cómo implementar indexedDB en nuestro sitio web:</h3>
+				<img src="css/img/indexedDB.png" alt="Como implementar indexedDB en nuestro sitio web" class="imagen-local">
+			</div>
+		</div>
+	</section>
+	<section class="contenedor tercero">
+		<section class="contenedor cambio2">
+			<h2 class="tituloBli">Bibliografía</h2>
+		</section>
+			
+        <footer>
+            <p class="foot">
+				MDN Web Docs (2022). <b>IndexedDB</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/es/docs/Web/API/IndexedDB_API" target="_blank">https://developer.mozilla.org/es/docs/Web/API/IndexedDB_API</a>
+            </p>
+			<p class="foot">
+				MDN Web Docs (2022). <b>Using IndexedDB</b>. Extraído del sitio MDN Web Docs: <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB</a>
+            </p>
+			<p class="foot">
+				Binary Coffee (2020). <b>¿CUÁL ES LA DIFERENCIA ENTRE LOCALSTORAGE, SESSIONSTORAGE E INDEXEDDB?</b> Extraído del sitio Binary Coffe: <a href="https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb" target="_blank">https://binary-coffee.dev/post/cual-es-la-diferencia-entre-localstorage-sessionstorage-e-indexeddb</a>
+            </p>
+        </footer>
+		
+	</section>
 </body>
 </html>
